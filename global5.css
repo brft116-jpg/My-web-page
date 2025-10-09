@@ -1,0 +1,84 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo estilo mando (hecho con CSS en rojo 2D) */
+#logo {
+    width: 80px;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Joysticks del mando */
+#logo::before, 
+#logo::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+#logo::before {
+    left: 15px;
+}
+#logo::after {
+    right: 15px;
+}
+
+/* Imagen del banner */
+header figure img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+header figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+/* Navegación */
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: red;
+}
+
+/* Contenido */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
